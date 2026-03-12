@@ -2226,6 +2226,14 @@ function createSettingsUI() {
                 <small style="color: #666;">Vector size returned by your custom embedding model (leave blank to auto-detect)</small>
             </div>
 
+<div id="qdrant_local_model_group" style="margin: 10px 0; display: none;">
+                <label><strong>Embedding Model Name:</strong></label>
+                <input type="text" id="qdrant_local_model" class="text_pole" value="${settings.embeddingModel}"
+                       placeholder="text-embedding-004"
+                       style="width: 100%; margin-top: 5px;" />
+                <small style="color: #666;">Model name for the API request (e.g. text-embedding-004, gemini-embedding-001)</small>
+            </div>
+
             <div id="qdrant_embedding_model_group" style="margin: 10px 0;">
                 <label><strong>Embedding Model:</strong></label>
                 <select id="qdrant_embedding_model" class="text_pole" style="width: 100%; margin-top: 5px;">
